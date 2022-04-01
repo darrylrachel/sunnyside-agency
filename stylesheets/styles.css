@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+/* Fonts  */
+--font-main: font-family: 'Barlow', sans-serif;
+--font-bold: font-family: 'Fraunces', serif;
+/* Primary */
+--soft-red: hsl(7, 99%, 70%);
+--yellow: hsl(51, 100%, 49%);
+--dark-desat-cyan: hsl(167, 40%, 24%); /*  (graphic design text)  */
+--dark-blue: hsl(198, 62%, 26%); /* (photography text) */
+--dark-mod-cyan: hsl(168, 34%, 41%); /* (footer) */
+
+/* Neutral */
+--v-dark-grayish-blue: hsl(213, 9%, 39%);
+--v-dark-desat-blue: hsl(212, 27%, 19%);
+--dark-grayish-blue: hsl(232, 10%, 55%);
+--grayish-blue: hsl(210, 4%, 67%);
+--white: hsl(0, 0%, 100%);
+}
+
+* { box-sizing: border-box; line-height: 1.3; padding: 0; margin: 0; }
+*::before, *::after { box-sizing: inherit; }
+
+body {
+	height: 100vh;
+	font-size: 18px;
+}
+
+@media (min-width: 375px) {
+	body {
+		border: 1px solid palegreen;
+	}
+	section.hero {
+		background: url(../images/desktop/image-header.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 100%;
+	}
+	section.hero__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 30px;
+	}
+	.header__logo {
+		padding-left: 20px;
+	}
+	.logo {
+		height: 28px;
+	}
+	.header__hamburger {
+		padding-right: 20px;
+	}
+	.hero__headline {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding-top: 100px;
+	}
+	.hero__headline h1{
+		color: #fff;
+		text-transform: uppercase;
+		font-family: 'Fraunces', serif;
+		font-weight: 900;
+		font-size: 45px;
+		letter-spacing: 5px;
+	}
+	.hero__headline-arrow {
+		margin-top: 98px;
+		height: 190px;
+	}
+ }
+
+@media (min-width: 576px) {
+	body {
+		border: 1px solid aqua;
+	}
+ }
+
+
+ @media (min-width: 768px) {
+	body {
+		border: 1px solid magenta;
+	}
+}
+
+
+@media (min-width: 992px) {
+	body {
+		border: 1px solid orange;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	body {
+		border: 1px solid blueviolet;
+	}
+}
